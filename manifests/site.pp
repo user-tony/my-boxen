@@ -51,10 +51,12 @@ Homebrew::Formula <| |> -> Package <| |>
 node default {
   # core modules, needed for most things
   include dnsmasq
+  include gcc
   include git
   include hub
   include nvm
   include projects::ruby-china
+  include imagemagick
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
