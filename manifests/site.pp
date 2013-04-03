@@ -55,8 +55,8 @@ node default {
   include git
   include hub
   include nvm
-  include projects::ruby-china
-  include imagemagick
+  include mysql
+  include projects::nutrition
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -68,6 +68,9 @@ node default {
   include nodejs::0-6
   include nodejs::0-8
 
+  include ruby::1_8_7
+  include ruby::1_9_3
+  include ruby::2_0_0
   # common, useful packages
   package {
     [
