@@ -1,33 +1,3 @@
-# Our Boxen
-
-This is a template Boxen project designed for your organization to fork and
-modify appropriately.
-The Boxen rubygem and the Boxen puppet modules are only a framework for getting
-things done.
-This repository template is just a basic example of _how_ to do things with them.
-
-## Getting Started
-
-To give you a brief overview, we're going to:
-
-* Install dependencies (basically XCode)
-* Bootstrap a boxen for your self/team/org/company
-* Then convert your local copy of that boxen to the post-bootstrapped version
-
-There are a few potential conflicts to keep in mind.
-Boxen does its best not to get in the way of a dirty system,
-but you should check into the following before attempting to install your
-boxen on any machine (we do some checks before every Boxen run to try
-and detect most of these and tell you anyway):
-
-* Boxen __requires__ at least the XCode Command Line Tools installed.
-* Boxen __will not__ work with an existing rvm install.
-* Boxen __may not__ play nice with an existing rbenv install.
-* Boxen __may not__ play nice with an existing chruby install.
-* Boxen __may not__ play nice with an existing homebrew install.
-* Boxen __may not__ play nice with an existing nvm install.
-* Boxen __recommends__ installing the full XCode.
-
 ### Dependencies
 
 **Install the XCode Command Lines Tools and/or full XCode.**
@@ -52,18 +22,12 @@ The reason for that is that you can't really make private forks of public
 repositories easily.
 
 Once you've done that, you can run the following to get bootstrap
-your boxen:
+your my-boxen:
 
 ```
 sudo mkdir -p /opt/boxen
 sudo chown ${USER}:admin /opt/boxen
-git clone https://github.com/boxen/our-boxen /opt/boxen/repo
-cd /opt/boxen/repo
-git remote rm origin
-git remote add origin <the location of my new git repository>
-git push -u origin master
-```
-
+git clone https://github.com/wtuyuupe/my-boxen /opt/boxen/repo
 ### Distributing
 
 That's enough to get your boxen into a usable state on other machines,
@@ -75,9 +39,6 @@ as an easy way to automate letting other folks install your boxen.
 If you _don't_ want to use boxen-web, folks can get using your boxen like so:
 
 ```
-sudo mkdir -p /opt/boxen
-sudo chown ${USER}:admin /opt/boxen
-git clone <location of my new git repository> /opt/boxen/repo
 cd /opt/boxen/repo
 script/boxen
 ```
@@ -253,10 +214,8 @@ It'll just be listed under the boxen org so folks can find it more easily.
 
 ## Halp!
 
-Use Issues or #boxen on irc.freenode.net.
-=======
-my-boxen
 ========
 
 My boxen setting environment
 >>>>>>> 0eca748be80b96f05d7e47a53d5859066830e1ca
+
